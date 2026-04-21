@@ -1,0 +1,4516 @@
+/* Common Css Start */
+
+.medium-header {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #A20733;
+    font-size: 25px;
+}
+
+.founder-table {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.founder-table thead th {
+    background: #A20733 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    padding: 13px;
+    border: none;
+    font-size: 14px;
+}
+
+.founder-table tbody tr {
+    transition: all 0.4s ease;
+}
+
+.founder-table td {
+    padding: 13px;
+    border-bottom: 1px solid #ccc;
+}
+
+.founder-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.founder-table th:first-child {
+    text-align: center;
+}
+
+.founder-table td:first-child {
+    text-align: center;
+}
+
+/* 
+.inner_tab_mainbox {
+    .nav-pills {
+        gap: 5px;
+        border-bottom: 1px solid #DEDEDE;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-pills .nav-link {
+        background: #F5F5F5;
+        border: 0;
+        color: var(--color-black);
+        border-radius: 5px 5px 0px 0px;
+        padding: 10px 15px;
+        font-size: 16px;
+        position: relative;
+        transition: all 0.3s ease;
+        width: 230px;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #A20733;
+        border-radius: 5px 5px 0px 0px;
+    }
+}
+
+
+.inner_tab_mainbox {
+    .nav-pills {}
+
+    .nav-pills::-webkit-scrollbar {
+        display: none;
+    }
+} */
+
+
+.inner_tab_mainbox .tab-scroll-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inner_tab_mainbox .nav-pills {
+    gap: 5px;
+    border-bottom: 1px solid #DEDEDE;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.inner_tab_mainbox .nav-pills::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tab buttons */
+.inner_tab_mainbox .nav-pills .nav-link {
+    background: #F5F5F5;
+    border: 0;
+    color: var(--color-black);
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 230px;
+    white-space: nowrap;
+}
+
+.inner_tab_mainbox .nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #A20733;
+}
+
+/* Arrows */
+/* Arrow Base */
+.tab-arrow {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #F5F5F5;
+    color: #A20733;
+}
+
+.tab-arrow.active {
+    background: #A20733;
+    color: #fff;
+}
+
+.tab-arrow.disabled {
+    background: #F5F5F5;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.tab-arrow.left {
+    left: -15px;
+    top: 4px;
+}
+
+.tab-arrow.right {
+    right: -15px;
+    top: 4px;
+}
+
+/* Common Banner css start */
+
+.main-banner-box {
+    padding: 120px 0 40px 0;
+    text-align: center;
+    background: hsl(343, 92%, 33%);
+    overflow: hidden;
+    color: #fff;
+}
+
+.main-banner-box .sub-main-banner {
+    position: relative;
+}
+
+
+.main-banner-box .animated-bg span {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+}
+
+
+.main-banner-box .animated-bg span:nth-child(1) {
+    top: -50px;
+    left: -50px;
+    animation-delay: 0s;
+}
+
+
+.main-banner-box .animated-bg span:nth-child(2) {
+    bottom: -80px;
+    right: 10%;
+    animation-delay: 3s;
+}
+
+
+.main-banner-box .animated-bg span:nth-child(3) {
+    top: 30%;
+    right: -60px;
+    animation-delay: 6s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+
+.main-banner-box .inner_heading {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+/* Breadcrumb */
+.banner-breadcrumb {
+    margin-top: 8px;
+}
+
+.banner-breadcrumb .breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.banner-breadcrumb .breadcrumb-item a {
+    color: #ffec02;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.banner-breadcrumb .breadcrumb-item.active {
+    color: #ffffff;
+    opacity: 1;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+.banner-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    /* color: rgba(255, 255, 255, 0.7); */
+    color: #ffec02;
+}
+
+/* Button */
+.common-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1a2155;
+    border: 1px solid #1a2155;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.35s ease, border-color 0.35s ease;
+    background: transparent;
+}
+
+/* hover background */
+.common-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #A20733;
+    transition: width 0.4s ease;
+    z-index: -1;
+}
+
+.common-btn:hover::before {
+    width: 100%;
+}
+
+.common-btn:hover {
+    color: #fff !important;
+    border-color: #A20733;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Common Css End */
+
+/* Top Header css start */
+
+.header-top-class .navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 5px 15px;
+}
+
+.header-top-class .navbar-nav .nav-link:hover,
+.header-top-class .navbar-nav .nav-link:focus {
+    color: #fff !important;
+}
+
+/* Top Header css End */
+
+/* About us css start */
+
+
+.chairman-modern {
+    background: linear-gradient(180deg,
+            rgba(162, 7, 51, 0.05),
+            rgba(162, 7, 51, 0.02),
+            #fff);
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0px;
+}
+
+
+.chairman-modern .shape {
+    position: absolute;
+    border-radius: 50%;
+    background: #A20733;
+    opacity: 0.08;
+}
+
+.chairman-modern .shape-1 {
+    width: 300px;
+    height: 300px;
+    top: -80px;
+    left: -80px;
+}
+
+.chairman-modern .shape-2 {
+    width: 220px;
+    height: 220px;
+    bottom: -60px;
+    right: -60px;
+}
+
+
+.chairman-modern .chairman-glass {
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    position: relative;
+    max-height: 430px;
+    overflow-y: auto;
+}
+
+
+.chairman-modern .modern-badge {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #A20733;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.chairman-modern .chairman-txtt {
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.chairman-modern .svg-icon {
+    width: 14px;
+    color: #fff;
+    margin-left: 2px;
+}
+
+
+.chairman-modern .signature-box h5 {
+    margin: 0;
+    font-weight: 700;
+    color: #A20733;
+}
+
+
+.chairman-modern .chairman-profile {
+    max-width: 360px;
+    margin: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+
+
+.chairman-modern .image-frame {
+    position: relative;
+    padding: 10px;
+    border-radius: 28px;
+    box-shadow: 0px 3px 6px #ccc;
+}
+
+.chairman-modern .image-frame img {
+    border-radius: 20px;
+    background: #fff;
+}
+
+.chairman-modern .profile-info {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px 20px;
+    box-shadow: 0px 3px 6px #ccc;
+}
+
+.chairman-modern .profile-info h5 {
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #A20733;
+}
+
+
+.chairman-modern .profile-info .designation {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.8;
+}
+
+
+.chairman-modern .profile-info .institution {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #000;
+}
+
+
+.chairman-modern .image-frame {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.chairman-modern .image-frame img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+
+.chairman-modern .image-frame:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 3px 6px #ccc;
+}
+
+.chairman-modern .image-frame:hover img {
+    transform: scale(1.03);
+    filter: grayscale(0);
+}
+
+.chairman-modern .image-frame img {
+    filter: grayscale(30%);
+}
+
+/* Chairman end */
+
+/* Infrastructure Start */
+.infra-section {
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.infra-section .infra-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.infra-section .infra-main-div p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.infra-section .infra-heading {
+    font-size: 38px;
+    color: #A20733;
+    font-weight: 700;
+    margin-bottom: 60px
+}
+
+.infra-section .infra-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+}
+
+.infra-section .infra-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 20px 10px 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.infra-section .infra-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #A20733, #A20733);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.infra-section .infra-item:hover::before {
+    opacity: 1;
+}
+
+.infra-section .infra-item * {
+    position: relative;
+    z-index: 2;
+}
+
+.infra-section .infra-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+    transition: transform 0.4s;
+}
+
+.infra-item:hover .infra-icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.infra-section .infra-item h3 {
+    font-size: 36px;
+    color: #A20733;
+    font-weight: 700;
+}
+
+.infra-section .infra-item p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.infra-section .infra-item:hover h3,
+.infra-section .infra-item:hover p {
+    color: #fff;
+}
+
+.infra-section .infra-item:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Vision & Mission css start */
+
+.vm-image-section {}
+
+
+
+.vm-image-section .vision-mission-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.vm-image-section .vm-image-box img {
+    width: 100%;
+    transition: transform 0.6s ease, filter 0.6s ease;
+    filter: brightness(1.05);
+    height: 400px;
+    object-fit: contain;
+}
+
+/* Image hover */
+.vm-image-section .vm-image-box:hover {
+    transform: translateY(-10px);
+}
+
+.vm-image-section .vm-image-box:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+/* Glass card */
+.vm-image-section .vm-glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(14px);
+    padding: 30px;
+    border-radius: 15px;
+    animation: vmFadeUp 1s ease both;
+}
+
+/* Badge */
+.vm-image-section .vm-badge {
+    display: inline-block;
+    padding: 7px 18px;
+    background: #A20733;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+/* Heading */
+.vm-image-section .vm-glass-card h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.vm-image-section .obj-icon {
+    font-size: 32px;
+    display: inline-block;
+    /* margin-bottom: 15px; */
+}
+
+.infra-section .icon-img {
+    width: 71px;
+    object-fit: cover;
+    margin-bottom: 5px;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 4px #ccc;
+    margin-top: 15px;
+}
+
+
+.infra-section .icon-img {
+    margin-bottom: 5px;
+}
+
+.infra-section .infra-item:hover .icon-img {
+    width: 55px;
+    object-fit: cover;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Fade animation */
+@keyframes vmFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.goals-modern {
+    padding: 60px 0;
+    background: linear-gradient(180deg,
+            rgba(162, 7, 51, 0.05),
+            rgba(162, 7, 51, 0.02),
+            #fff);
+}
+
+/* Header */
+.goals-modern .modern-title {
+    font-size: 36px;
+    font-weight: 800;
+    /* color: #000; */
+    color: #A20733;
+}
+
+.goals-modern .goal-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(14px);
+    border-radius: 26px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.goals-modern .goal-card {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    transition: color 0.4s ease;
+}
+
+.goals-modern .goal-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #A20733;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.goals-modern .goal-card:hover::before {
+    transform: scale(1);
+}
+
+.goals-modern .goal-card * {
+    position: relative;
+    z-index: 1;
+}
+
+.goals-modern .goal-card .goal-icon-img {
+    width: 50px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+
+/* Optional: text/icon color change on hover */
+.goals-modern .goal-card:hover p,
+.goals-modern .goal-card:hover .goal-icon-img {
+    color: #fff;
+    filter: brightness(0) invert(1);
+}
+
+
+/* Icon */
+.goals-modern .goal-icon {
+    width: 58px;
+    height: 58px;
+    background: rgba(162, 7, 51, 0.1);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.goal-icon img {
+    width: 28px;
+}
+
+/* Text */
+.goal-card p {
+    font-size: 15px;
+    /* color: #000;
+    opacity: 0.85; */
+    margin: 0;
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Vision & Mission css end */
+
+
+/* About History */
+
+/* IMAGE GRID */
+
+.about-history-main {
+    padding: 30px 0;
+}
+
+.about-history-main .text-holder-main {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.about-history-main .history-img {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.about-history-main .history-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-history-main .history-img:hover {
+    transform: translateY(-8px);
+}
+
+
+/* About history 1 css start */
+
+.college-history-section .college-img {
+    width: 100%;
+    object-fit: contain;
+    height: 300px;
+}
+
+.college-history-section .college-img-modern {
+    border-radius: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+    height: 380px;
+    background-size: cover;
+}
+
+.college-history-section .college-img-modern:hover {
+    transform: scale(1.03);
+}
+
+.college-history-section .info-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+
+/* About history 1 css end */
+
+/* Gallery CSS Start */
+
+.gallery-section {
+    padding: 60px 0px;
+}
+
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    height: 270px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .gallery-img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+/* Gallery CSS End */
+
+
+
+/* Board Of studies Start */
+.board-studies-section {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.board-studies-section .section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 40px;
+    border-left: 5px solid #A20733;
+    padding-left: 15px;
+}
+
+.board-studies-section .department-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 40px;
+}
+
+.board-studies-section .department-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.board-studies-section .department-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.board-studies-section .department-list i {
+    font-size: 18px;
+    min-width: 22px;
+    color: #A20733;
+}
+
+.board-studies-section .department-list span {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.board-studies-section .department-list a {
+    font-size: 13px;
+    background: transparent;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+    padding: 1px 19px;
+    border-radius: 5px;
+    border: 1px solid #1a2155;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Animated background */
+.board-studies-section .department-list a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #A20733;
+    transition: width 0.35s ease;
+    z-index: -1;
+}
+
+.board-studies-section .department-list a:hover::before {
+    width: 100%;
+}
+
+.board-studies-section .department-list a:hover {
+    border-color: #A20733;
+    color: #FFF;
+}
+
+
+.board-studies-section .department-list a:hover::after {
+    width: 100%;
+}
+
+/* Smooth hover transition */
+.board-studies-section .department-list li {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Left indicator line */
+.board-studies-section .department-list li::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 0;
+    background-color: #A20733;
+    transition: height 0.3s ease;
+}
+
+.board-studies-section .department-list li:hover::before {
+    height: 60%;
+}
+
+/* Icon hover animation */
+.board-studies-section .department-list li:hover i {
+    transform: translateY(-2px) rotate(-6deg);
+    transition: 0.3s ease;
+}
+
+/* Text emphasis */
+.board-studies-section .department-list li:hover span {
+    color: #1a2155;
+    font-weight: 600;
+}
+
+/* View link hover */
+.board-studies-section .department-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+/* Board Of studies End */
+
+/* Common accordian start */
+
+
+.rap_admission_main .section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #A20733;
+    margin-bottom: 28px;
+}
+
+.rap_admission_main .rap-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.rap_admission_main .rap-timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #A20733;
+}
+
+.rap_admission_main .rap-dot {
+    width: 15px;
+    height: 15px;
+    background: #A20733;
+    border-radius: 50%;
+    position: relative;
+    left: calc(18px - 6.5px);
+    margin-top: 23px;
+    flex-shrink: 0;
+}
+
+.rap_admission_main .rap-item {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.rap_admission_main .rap-content {
+    background: #fff;
+    padding: 18px;
+    border-radius: 14px;
+    width: 100%;
+}
+
+.rap_admission_main .rap-content h4 {
+    color: #1a2155;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* ACCORDION */
+/* Bootstrap accordion override */
+.rap_admission_main .rap-acc-btn {
+    background: none !important;
+    color: #1a2155 !important;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    box-shadow: none;
+}
+
+.rap_admission_main .accordion-button:not(.collapsed) {
+    color: #A20733 !important;
+}
+
+.rap_admission_main .rap-acc-btn::after {
+    background-image: none !important;
+    content: "+";
+    font-size: 22px;
+    transform: none !important;
+}
+
+.rap_admission_main .accordion-button:not(.collapsed)::after {
+    content: "−";
+    color: #A20733;
+}
+
+
+.rap_admission_main .accordion-item {
+    border: none;
+}
+
+.rap_admission_main .accordion-body {
+    padding: 15px 0 0;
+}
+
+
+.gc-modern-section {
+    padding: 30px 40px;
+}
+
+.gc-modern-section .gc-modern-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Card */
+.gc-modern-section .gc-modern-card {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 28px 26px;
+    background-color: #fff;
+    transition: all 0.35s ease;
+    overflow: hidden;
+    border-left: 0;
+    border-radius: 5px;
+}
+
+/* Left accent strip */
+.gc-modern-section .gc-modern-card .gc-accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #A20733;
+}
+
+/* Date */
+.gc-modern-section .gc-date {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    background: #1a2155;
+    color: #fff;
+    display: block;
+    margin-bottom: 14px;
+    width: fit-content;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/* Text */
+.gc-modern-section .gc-modern-card p {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+/* Link */
+.gc-modern-section .gc-modern-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #A20733;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.gc-modern-section .gc-modern-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 3px 6px rgba(26, 33, 85, 0.15);
+}
+
+.gc-modern-section .gc-modern-card:hover a {
+    color: #1a2155;
+}
+
+.gc-modern-section .gc-modern-card a i {
+    transition: transform 0.3s ease;
+}
+
+.gc-modern-section .gc-modern-card:hover a i {
+    transform: translateX(6px);
+}
+
+/* Common accordian end */
+
+/* Academic */
+
+.programme-section {
+    background: #f8f9fc;
+    padding: 60px 20px;
+}
+
+.programme-card {
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.08);
+}
+
+.programme-main-title {
+    color: #1a2155;
+    padding: 5px 15px;
+    display: inline-block;
+    border-left: 5px solid #A20733;
+    text-align: center;
+}
+
+.programme-card h3 {
+    color: #A20733;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.programme-card h4 {
+    color: #1a2155;
+    margin-bottom: 10px;
+}
+
+
+.semester-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.semester-box {
+    background: #f4f6ff;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid #A20733;
+}
+
+/* Certificate cource css start */
+
+
+/* Card */
+.certificate-course .course-card {
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 30px 34px;
+    background-color: #fff;
+    transition: all 0.35s ease;
+    background: #FFF;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: 280px;
+}
+
+/* Header */
+.course-header {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.course-header i {
+    font-size: 28px;
+    color: #1a2155;
+    transition: transform 0.4s ease;
+}
+
+.course-header h3 {
+    font-size: 16px;
+    color: #A20733;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.course-header h3 span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Info list */
+.course-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 26px;
+}
+
+.course-info li {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    font-size: 15px;
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.course-info li i {
+    color: #1a2155;
+    margin-top: 3px;
+    min-width: 18px;
+}
+
+.course-info span {
+    display: block;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Hover effects */
+.course-card:hover {
+    box-shadow: 0 3px 6px rgba(26, 33, 85, 0.15);
+    transform: translateY(-6px);
+}
+
+.course-card:hover .course-header i {
+    transform: rotate(-8deg) scale(1.1);
+}
+
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Intro Line */
+.contact-intro {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2155;
+    margin-bottom: 10px;
+}
+
+/* Contact Info */
+.contact-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-text i {
+    color: #A20733;
+    margin-right: 6px;
+}
+
+.contact-text a {
+    color: #1a2155;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact-text a:hover {
+    color: #A20733;
+}
+
+.contact-text span {
+    margin: 0 6px;
+    font-weight: 500;
+}
+
+/* Certificate cource css end */
+
+/* Arts  */
+
+.jc-info {
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0 20px;
+    color: #000;
+    line-height: 1.7;
+}
+
+.jc-info h2 {
+    font-size: 30px;
+    color: #1a2155;
+    margin-bottom: 30px;
+}
+
+.jc-info h2 i {
+    color: #A20733;
+    margin-right: 8px;
+}
+
+.jc-block {
+    margin-bottom: 35px;
+}
+
+.jc-block h3 {
+    font-size: 22px;
+    color: #A20733;
+    margin-bottom: 12px;
+}
+
+.jc-block h3 i {
+    color: #1a2155;
+    margin-right: 8px;
+}
+
+.jc-block p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.jc-block ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+
+.jc-block ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.jc-block li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* Arrow */
+.jc-block li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #A20733;
+    /* arrow color */
+    font-size: 14px;
+}
+
+
+.jc-note {
+    margin-top: 12px;
+    font-size: 15px;
+    color: #1a2155;
+}
+
+.jc-note i {
+    color: #A20733;
+    margin-right: 6px;
+}
+
+
+/* Academic Css end */
+
+
+/* Comittee CSS start */
+
+.committee-section {
+    padding: 60px 0;
+}
+
+.committee-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+/* Card */
+.committee-card {
+    background: #ffffff;
+    padding: 28px 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect */
+.committee-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #A20733, #1a2155);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: 0;
+}
+
+.committee-card:hover::before {
+    opacity: 0.08;
+}
+
+.committee-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Title */
+.committee-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a2155;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Comittee CSS End */
+
+
+/* Department CSS start */
+
+.arts-departments {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.arts-departments .arts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* Column */
+.arts-departments .arts-column {
+    border-left: 2px solid #1a2155;
+    padding-left: 22px;
+}
+
+/* Titles */
+.arts-departments .arts-title {
+    font-size: 20px;
+    color: #1a2155;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.arts-departments .arts-title.aided::after,
+.arts-departments .arts-title.self::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #A20733;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+/* List */
+.arts-departments .arts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.arts-departments .arts-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #e6e6e6;
+    transition: all 0.3s ease;
+    gap: 15px;
+}
+
+.arts-departments .arts-list li span {
+    flex: 1;
+}
+
+.arts-departments .arts-list li a {
+    white-space: nowrap;
+}
+
+.arts-departments .arts-list li:last-child {
+    border-bottom: none;
+}
+
+.arts-departments .arts-list li span {
+    font-size: 16px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+/* Link */
+.arts-departments .arts-list li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #1a2155;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.arts-departments .arts-list li:hover span {
+    color: #A20733;
+}
+
+.arts-list li:hover a {
+    border-color: #A20733;
+    color: #A20733;
+}
+
+
+.dept-image-slider {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-track {
+    display: flex;
+    gap: 16px;
+    transition: transform 0.6s ease;
+}
+
+.slider-track img {
+    width: calc(33.333% - 11px);
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+}
+
+.section-title-table {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Departments CSS end */
+
+
+/* Student Zone Start */
+
+.library-section {
+    padding: 30px 10px;
+    border-radius: 5px;
+}
+
+.library-section .libraryimg {
+    width: 100%;
+    height: 250px;
+    border-radius: 14px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    cursor: pointer;
+    position: relative;
+    object-fit: cover;
+}
+
+/* Hover effect */
+.library-section .libraryimg:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Soft overlay glow */
+.library-section .libraryimg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 33, 85, 0.15);
+    opacity: 0;
+    border-radius: 14px;
+    transition: opacity 0.6s ease;
+}
+
+.library-section .libraryimg:hover::after {
+    opacity: 1;
+}
+
+
+.library-section .container {
+    /* max-width: 1200px; */
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Quote */
+.library-section .library-quote {
+    font-size: 19px;
+    font-style: italic;
+    padding: 18px 25px;
+    background: #ffffff;
+    border-left: 5px solid #A20733;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 35px;
+    transition: 0.4s;
+}
+
+.library-section .library-quote:hover {
+    transform: translateX(6px);
+}
+
+/* Intro */
+.library-section .library-intro p {
+    margin: 18px 0;
+    font-size: 16px;
+}
+
+/* Stats */
+.library-section .library-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin: 30px 0px;
+}
+
+.library-section .stat-box {
+    background: linear-gradient(180deg, #ffffff, #f7f8fc);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.library-section .stat-box:hover {
+    transform: translateY(-6px);
+}
+
+.library-section .stat-box h3 {
+    margin: 0;
+    color: #A20733;
+    font-size: 26px;
+}
+
+.library-section .db-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Section title */
+.library-section .section-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a2155;
+    margin: 0px 0 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.library-section .section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 22px;
+    background: #A20733;
+    border-radius: 10px;
+}
+
+/* Area details */
+.library-section .area-details {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.library-section .area-details li {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 22px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    transition: 0.35s;
+}
+
+.library-section .area-details li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: #A20733;
+    transform: scaleY(0);
+    transition: 0.35s;
+}
+
+.library-section .area-details li:hover::before {
+    transform: scaleY(1);
+}
+
+.library-section .area-details li:hover {
+    background: #f9fafc;
+}
+
+.library-section .area-details li:last-child {
+    border-bottom: none;
+}
+
+
+/* Rules */
+.library-section .library-rules {
+    background: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .06);
+}
+
+
+/* Committee */
+.library-section .committee-list {}
+
+.main-grid-library-class {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 30px;
+}
+
+
+.library-section .sub-grid-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: 0.45s ease;
+}
+
+.committee-list li {
+    margin-bottom: 12px;
+    padding-left: 22px;
+    position: relative;
+    list-style-type: none;
+}
+
+.committee-list li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #A20733;
+}
+
+
+
+.library-section .activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.library-section .activity-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px 26px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: 0.45s ease;
+    overflow: hidden;
+}
+
+.library-section .activity-card:hover {
+    color: #fff;
+    transform: translateY(-12px);
+}
+
+
+.library-section .activity-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #A20733;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 0.45s ease;
+    z-index: -1;
+}
+
+.library-section .activity-card:hover::before {
+    transform: scale(1);
+}
+
+.library-section .activity-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.library-section .activity-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a2155;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: 0.45s ease;
+    margin-bottom: 10px;
+}
+
+.library-section .activity-card:hover .activity-icon {
+    background: #fff;
+    color: #A20733;
+}
+
+.library-section .activity-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    /* important */
+}
+
+
+.library-section .activity-card:hover .activity-icon {
+    background: #fff;
+    color: #A20733;
+}
+
+
+.library-section .activity-card:hover h4 {
+    color: #FFF;
+}
+
+
+.library-section .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.library-section .service-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: 0.45s ease;
+}
+
+.library-section .service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #A20733;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: 0.45s ease;
+    z-index: -1;
+}
+
+.library-section .service-card:hover::before {
+    transform: scale(1);
+}
+
+.library-section .service-card:hover {
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+.library-section .service-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.library-section .service-card h4 i {
+    color: #FFF;
+    transition: 0.4s;
+}
+
+.library-section .service-card:hover h4 i {
+    color: #A20733;
+    background: #FFF;
+}
+
+.library-section .service-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.library-section .service-list li {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    padding-left: 22px;
+    position: relative;
+}
+
+.library-section .service-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #A20733;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.library-section .service-card:hover .service-list li::before {
+    color: #fff;
+}
+
+.library-section .service-card:hover h4 {
+    color: #fff;
+}
+
+.library-section .service-list a {
+    color: #1a2155;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.library-section .service-card:hover .service-list a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.faq-section {
+    padding: 60px 0;
+}
+
+.faq-section li {
+    margin-bottom: 12px;
+    padding-left: 22px;
+    position: relative;
+    list-style-type: none;
+}
+
+.faq-section li::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #A20733;
+}
+
+.faq-section h4 {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+/* Railway Concession */
+
+.railway-attractive-section {}
+
+.railway-attractive-section .railway-content {
+    max-width: 950px;
+    margin: auto;
+}
+
+.railway-attractive-section .railway-heading {
+    margin: 40px 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a2155;
+    position: relative;
+}
+
+.railway-attractive-section .railway-heading::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #A20733;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+
+.railway-attractive-section .railway-rule-box {
+    display: flex;
+    gap: 20px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(26, 33, 85, 0.15);
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.railway-attractive-section .railway-rule-box:hover {
+    border-color: #A20733;
+    background: rgba(162, 7, 51, 0.04);
+    transform: translateX(6px);
+}
+
+.railway-attractive-section .rule-no {
+    font-size: 18px;
+    font-weight: 700;
+    color: #A20733;
+    min-width: 32px;
+}
+
+
+/* Existing styles remain same */
+.editorial-block {
+    margin: 0 auto 22px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.editorial-block::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #A20733;
+}
+
+/* Mentoring */
+
+.mentoring-timeline-wrap {
+    margin-top: 30px;
+}
+
+/* Title */
+.timeline-title {
+    font-size: 24px;
+    color: #A20733;
+    margin: 35px 0px;
+    text-align: center;
+}
+
+/* Timeline base */
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgba(162, 7, 51, 0.3);
+}
+
+/* Item */
+.timeline-item {
+    position: relative;
+    padding: 15px 0 15px 30px;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+/* Number */
+.timeline-count {
+    position: absolute;
+    left: -50px;
+    top: 18px;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #A20733;
+    color: #A20733;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: .3s;
+    border-radius: 100%;
+}
+
+
+/* Hover effect */
+.timeline-item:hover {
+    padding-left: 40px;
+}
+
+.timeline-item:hover .timeline-count {
+    background: #A20733;
+    color: #fff;
+}
+
+.timeline-item:hover::before {
+    opacity: 1;
+}
+
+/* Text */
+.timeline-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Footer */
+.timeline-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(162, 7, 51, 0.2);
+}
+
+.members-label {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #A20733;
+}
+
+.members-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.members-inline span {
+    padding: 6px 14px;
+    border: 1px solid rgba(162, 7, 51, 0.3);
+    border-radius: 20px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.members-inline span:hover {
+    background: #A20733;
+    color: #fff;
+}
+
+.mentoring-img {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+
+/* Hover effect */
+.mentoring-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.1);
+}
+
+
+/* Scholaship */
+
+.concession-note {
+    background-color: #f9f9f9;
+    border-left: 5px solid #A20733;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin: 30px 0 20px 0;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.concession-note p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.concession-note strong {
+    color: #A20733;
+}
+
+/* Hover effect for interactivity */
+.concession-note:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.scholarship-main .board-studies-section {
+    background: transparent;
+    padding: 20px 0;
+}
+
+/* Student Zone End */
+
+
+/* Admission Start */
+
+.eligibility-wrap {
+    background: #fff;
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+    color: #000;
+}
+
+
+.eligibility-wrap .eligibility-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1a2155;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.eligibility-wrap .eligibility-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #A20733;
+    display: block;
+    margin-top: 8px;
+}
+
+
+.eligibility-wrap .eligibility-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 18px;
+}
+
+
+.eligibility-wrap .eligibility-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 18px 20px;
+    transition: all 0.2s ease;
+}
+
+
+.eligibility-wrap .eligibility-item:hover {
+    border-color: #1a2155;
+}
+
+
+.eligibility-wrap .eligibility-item h4 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1a2155;
+    margin-bottom: 6px;
+}
+
+
+.eligibility-wrap .eligibility-item p {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+.eligibility-wrap .eligibility-item span {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #A20733;
+}
+
+
+.eligibility-wrap .eligibility-note {
+    grid-column: 1 / -1;
+    background: #f6f7fb;
+    border-left: 4px solid #A20733;
+    padding: 18px 22px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+
+.document-section {
+    padding: 60px 0px;
+}
+
+.documents-stepper {
+    padding: 0 0 40px 0;
+    color: #000;
+}
+
+.documents-stepper:last-child {
+    padding: 0 0 0 0;
+}
+
+
+.documents-stepper h3 {
+    color: #A20733;
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+
+/* Item row */
+.doc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Alphabet badge */
+.doc-badge {
+    min-width: 34px;
+    height: 34px;
+    background-color: #1a2155;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 34px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover – subtle & official */
+.doc-item:hover {
+    background-color: #f2f2f2;
+    padding-left: 18px;
+}
+
+.doc-item:hover .doc-badge {
+    background-color: #A20733;
+}
+
+/* Admission End */
+
+/* Examination Start */
+
+.results-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.results-block {
+    margin-bottom: 40px;
+}
+
+.results-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-left: 4px solid #1a2155;
+    padding-left: 10px;
+    color: #A20733;
+}
+
+.results-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.results-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.pdf-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pdf-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.pdf-list li:last-child {
+    border-bottom: none;
+}
+
+.pdf-list i {
+    color: #A20733;
+    font-size: 18px;
+}
+
+.pdf-list a {
+    color: #222;
+    text-decoration: none;
+}
+
+.pdf-list a:hover {
+    text-decoration: underline;
+}
+
+.old-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #A20733;
+    text-decoration: none;
+}
+
+
+.results-ui {
+    margin: auto;
+}
+
+.result-card {
+    background: linear-gradient(180deg, #ffffff, #f7f8fc);
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.card-header {
+    margin-bottom: 20px;
+}
+
+.card-header h3 {
+    font-size: 22px;
+    margin: 8px 0;
+    color: #1a2155;
+}
+
+.card-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-atkt {
+    background: #ffe4e8;
+    color: #A20733;
+}
+
+.badge-regular {
+    background: #e4ecff;
+    color: #1a2155;
+}
+
+.result-files {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.result-files li {
+    display: grid;
+    grid-template-columns: 24px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.result-files li:hover {
+    background: #ffffff;
+    transform: translateX(5px);
+}
+
+.result-files i {
+    color: #A20733;
+    font-size: 20px;
+}
+
+.download-btn {
+    background: #1a2155;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background: #A20733;
+}
+
+.view-old {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #1a2155;
+    text-decoration: none;
+}
+
+.common-btn i {
+    font-size: 13px;
+    color: #1a2155;
+}
+
+.common-btn:hover i {
+    color: #FFF;
+}
+
+/* Examination End */
+.main-iqac {
+    padding: 60px 0;
+}
+
+.iqac-content {
+    padding: 30px;
+    background: #fff;
+    color: #000;
+    border-left: 6px solid #A20733;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.iqac-title {
+    color: #1a2155;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.iqac-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #A20733;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.iqac-content p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.iqac-img-box {
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.iqac-img {
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.iqac-functions {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.section-header h3 {
+    color: #1a2155;
+    font-weight: 600;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+}
+
+.iqac-decent-list {
+    list-style: none;
+    padding: 0;
+}
+
+.iqac-decent-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.iqac-decent-list i {
+    color: #A20733;
+    font-size: 15px;
+    margin-top: 4px;
+    min-width: 18px;
+}
+
+.iqac-functions {
+    padding: 70px 0;
+    background: #f5f7fb;
+}
+
+.section-header h3 {
+    color: #1a2155;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+}
+
+.section-header p {
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+
+.iqac-card {
+    background: #fff;
+    padding: 28px 22px;
+    border-radius: 10px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.35s ease;
+}
+
+.iqac-card i {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    color: #A20733;
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.iqac-card p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* very subtle hover – professional */
+.iqac-card:hover {
+    transform: translateY(-6px);
+}
+
+
+.main-iqac {
+    margin-bottom: 20px;
+}
+
+.iqac-table td.text-start {
+    color: #000 !important;
+    font-weight: 500;
+}
+
+
+/* AQAR */
+
+.aqar-section {
+    padding: 60px 0;
+}
+
+.aqar-section p {
+    color: #000;
+    font-size: 16px;
+}
+
+.aqar-list {
+    /* max-width: 720px; */
+    margin: 0 auto;
+}
+
+.aqar-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border: 1px solid #e5e5e5;
+    border-left: 4px solid #1a2155;
+    margin-bottom: 12px;
+    transition: all 0.35s ease;
+    background: #fff;
+}
+
+.aqar-item:hover {
+    border-left-color: #A20733;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.aqar-year {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+
+.grey-border {
+    border-bottom: 1px solid #ccc;
+}
+
+.career-section {
+    padding: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.career-section .career-box {
+    background: #fff;
+    max-width: 700px;
+    margin: auto;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2);
+}
+
+.career-box h2 {
+    color: #1a2155;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.career-box p {
+    font-size: 16px;
+}
+
+/* Highlight Email */
+.email-highlight {
+    color: #A20733;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Button */
+.apply-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #A20733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    border: 1px solid #A20733;
+}
+
+.apply-btn:hover {
+    color: #FFF !important;
+
+}
+
+/* Career End */
+
+/* Placement Start */
+
+.placement-section {
+    padding: 60px 0;
+    background: #FFF;
+}
+
+
+.placement-section .section-header {
+    text-align: center;
+}
+
+.placement-section .section-header p {
+    max-width: 750px;
+    margin: auto;
+}
+
+
+/* Programs Grid */
+.placement-section .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.placement-section .program-card {
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    color: #FFF;
+    border: 1px solid #A20733;
+}
+
+.placement-section .program-card:hover {
+    transform: translateY(-8px);
+}
+
+.placement-section .icon-box {
+    font-size: 35px;
+    margin-bottom: 15px;
+    background: #A20733;
+}
+
+.placement-section .program-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Objectives */
+.placement-section .objectives h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #1a2155;
+    margin-bottom: 40px;
+}
+
+.placement-section .objective-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.placement-section .objective-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-left: 5px solid #A20733;
+    border-radius: 8px;
+}
+
+.placement-section .objective-item span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a2155;
+    min-width: 40px;
+}
+
+.placement-section .objective-item p {
+    margin: 0;
+    color: #000;
+}
+
+/* Placement End */
+
+/* Admission page start */
+
+.news-section {
+    padding: 60px 20px;
+}
+
+.table-news-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #1a2155;
+    font-weight: 600;
+    text-align: center;
+}
+
+.news-title {
+    text-align: center;
+    color: #1a2155;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.news-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #A20733;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.notice-box {
+    background-color: #fff;
+    color: #000;
+    padding: 25px;
+    border-left: 6px solid #A20733;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.notice-box:hover {
+    transform: translateY(-5px);
+}
+
+.notice-box p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Admission page end */
+
+/* Homepage inner page start */
+
+.campus-section {
+    padding: 60px 0;
+    background: #FFF;
+}
+
+.section-title h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a2155;
+    margin-bottom: 40px;
+}
+
+.campus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.campus-card {
+    background: #FFF;
+    border: 1px solid #eee;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.campus-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: #A20733;
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+.campus-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+
+.research-modern {
+    padding: 70px 0;
+    background: #f4f6fb;
+}
+
+.research-header {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.research-header p {
+    font-size: 16px;
+}
+
+.research-card {
+    background: #FFF;
+    padding: 35px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 03px 6px rgba(0, 0, 0, 0.05);
+}
+
+.research-card h3 {
+    color: #A20733;
+    font-size: 20px;
+}
+
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.member-card:hover h4 {
+    color: #FFF;
+}
+
+.member-card:hover {
+    background: #A20733;
+    color: #FFF;
+    transform: translateY(-5px);
+}
+
+.chairperson {
+    border: 1px solid #1a2155;
+}
+
+
+.ipr-section {
+    padding: 60px 0;
+    background: #f5f7fb;
+}
+
+.ipr-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.ipr-card h3 {
+    color: #A20733;
+    margin-bottom: 20px;
+}
+
+.ipr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.ipr-badge {
+    background: #1a2155;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+.patent-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 4px solid #A20733;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+.career-fest-section {
+    padding: 60px 0;
+}
+
+.fest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.fest-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border-top: 4px solid #A20733;
+}
+
+.fest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.career-fest-section .student-imgg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.ncc-section {
+    padding: 60px 0;
+}
+
+.section-title h2 {
+    text-align: center;
+    color: #1a2155;
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.ncc-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #A20733;
+}
+
+
+.sub-heading {
+    color: #1a2155;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.ncc-ordered {
+    padding-left: 20px;
+}
+
+.ncc-ordered li {
+    margin-bottom: 6px;
+}
+
+.ncc-activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.ncc-activity-grid div {
+    background: #1a2155;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.ncc-activity-grid div:hover {
+    background: #A20733;
+}
+
+
+.nss-report {
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.nss-report h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #b30000;
+    border-bottom: 3px solid #b30000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.nss-report h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 30px 0 20px;
+    color: #222;
+    border-left: 5px solid #A20733;
+    padding-left: 10px;
+}
+
+.activity {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    border-left: 4px solid #A20733;
+}
+
+.activity:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.activity h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #A20733;
+    font-weight: 600;
+}
+
+
+.click-here-btn-class {
+    color: #A20733;
+}
+
+
+/* News & events Section */
+
+.news-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px 5px;
+}
+
+.main-class-news-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.news-card a {
+    color: #CB2E33;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVE Media Query*/
+
+@media (max-width:1200px) {
+    .chairman-modern .chairman-glass p {
+        font-size: 15px;
+    }
+
+    .goal-card p {
+        font-size: 13px;
+    }
+
+    .goals-modern .modern-title {
+        font-size: 30px;
+    }
+
+    .medium-header {
+        font-size: 21px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .founder-table td {
+        font-size: 12px;
+    }
+
+    .founder-table thead th {
+        font-size: 12px;
+    }
+
+    .main-banner-box .inner_heading {
+        font-size: 30px;
+    }
+
+    .arts-departments .arts-title {
+        font-size: 18px;
+    }
+
+    .arts-departments .arts-list li span {
+        font-size: 14px;
+    }
+
+    .news-title {
+        font-size: 27px;
+    }
+
+    .news-title::after {
+        width: 70px;
+        height: 3px;
+    }
+
+    .notice-box p {
+        font-size: 15px;
+    }
+
+    .table-news-title {
+        font-size: 17px;
+    }
+
+    .eligibility-wrap .eligibility-title {
+        font-size: 25px;
+    }
+
+    .eligibility-wrap .eligibility-list {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .eligibility-wrap .eligibility-item p {
+        font-size: 14px;
+    }
+
+    .eligibility-wrap .eligibility-note {
+        font-size: 14px;
+    }
+
+    .eligibility-wrap .eligibility-item h4 {
+        font-size: 15px;
+    }
+
+    .footer-widget li {
+        font-size: 14px;
+    }
+
+    .ftitle {
+        font-size: 20px;
+    }
+
+    .library-section .library-quote {
+        font-size: 16px;
+    }
+
+    .inner_tab_mainbox .nav-pills .nav-link {
+        font-size: 14px;
+    }
+
+    .library-section .stat-box h3 {
+        font-size: 22px;
+    }
+
+    .library-section .section-title {
+        font-size: 20px;
+    }
+
+    .library-section .area-details {
+        font-size: 14px;
+    }
+
+    .library-section .committee-list {
+        font-size: 14px;
+    }
+
+    .library-section .library-stats {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .aqar-year {
+        font-size: 14px;
+    }
+
+    .board-studies-section .section-title {
+        font-size: 24px;
+    }
+
+    .board-studies-section .department-list li span {
+        font-size: 14px;
+    }
+
+    .infra-section .infra-main-div p {
+        font-size: 13px;
+    }
+}
+
+
+@media(max-width:991px) {
+    .chairman-modern {
+        padding: 45px 0px;
+    }
+
+    .main-banner-box .inner_heading {
+        font-size: 25px;
+    }
+
+    .main-banner-box .animated-bg span {
+        width: 120px;
+        height: 120px;
+    }
+
+    .banner-breadcrumb .breadcrumb-item {
+        font-size: 11px;
+    }
+
+    .banner-breadcrumb .breadcrumb-item.active {
+        font-size: 11px;
+    }
+
+    .chairman-modern .profile-info h5 {
+        font-size: 20px;
+    }
+
+    .chairman-modern .chairman-txtt {
+        font-size: 14px;
+    }
+
+    .chairman-modern .chairman-glass p {
+        font-size: 14px;
+    }
+
+    .chairman-modern .profile-info {
+        padding: 12px;
+    }
+
+    .vm-glass-card {
+        padding: 28px;
+    }
+
+    .vm-glass-card h3 {
+        font-size: 22px;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-count {
+        left: -31px;
+    }
+
+    .timeline-item p {
+        font-size: 14px;
+    }
+
+    .medium-header {
+        font-size: 20px;
+    }
+
+    .vm-image-box img {
+        height: 346px;
+    }
+
+    .goal-card p {
+        font-size: 12px;
+    }
+
+    .goal-card .goal-icon-img {
+        width: 45px;
+    }
+
+    .chairman-modern .shape-1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .college-img-modern {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .text-holder-main {
+        padding: 30px;
+    }
+
+    .about-history-main {
+        padding: 20px 0;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .college-history-section {
+        padding: 20px 0;
+    }
+
+    .goals-modern .modern-title {
+        font-size: 28px;
+    }
+
+    .founder-table td {
+        padding: 11px;
+        font-size: 12px;
+    }
+
+    .founder-table thead th {
+        font-size: 12px;
+    }
+
+    .inner_tab_mainbox {
+        .nav-pills .nav-link {
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+    }
+
+    .tab-arrow.left {
+        left: -5px;
+        top: 0px;
+    }
+
+    .tab-arrow.right {
+        right: -5px;
+        top: 0px;
+    }
+
+    .tab-arrow {
+        width: 37px;
+        height: 37px;
+    }
+
+    .rap_admission_main .rap-acc-btn {
+        font-size: 15px;
+    }
+
+    .gc-modern-section .gc-modern-card p {
+        font-size: 14px;
+    }
+
+    .jc-info h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .jc-block p {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .jc-block li {
+        font-size: 13px;
+    }
+
+    .jc-block h3 {
+        font-size: 20px;
+    }
+
+    .programme-section {
+        padding: 20px 0px;
+    }
+
+    .programme-main-title {
+        padding: 6px 11px;
+        border-left: 3px solid #A20733;
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .programme-card h3 {
+        font-size: 16px;
+    }
+
+    .programme-card {
+        padding: 20px;
+    }
+
+    .programme-card h4 {
+        font-size: 18px;
+    }
+
+    .semester-box {
+        padding: 10px;
+    }
+
+    .committee-list li {
+        font-size: 13px;
+    }
+
+    .course-header h3 {
+        font-size: 13px;
+    }
+
+    .course-header h3 span {
+        font-size: 17px;
+    }
+
+    .course-info li {
+        font-size: 14px;
+    }
+
+    .course-header i {
+        font-size: 24px;
+    }
+
+    .contact-intro {
+        font-size: 17px;
+    }
+
+    .contact-text {
+        font-size: 14px;
+    }
+
+    .arts-departments .arts-title {
+        font-size: 16px;
+    }
+
+    .arts-departments .arts-list li span {
+        font-size: 13px;
+    }
+
+    .arts-departments .arts-list li a {
+        font-size: 11px;
+    }
+
+    .news-title {
+        font-size: 25px;
+    }
+
+    .news-title::after {
+        width: 65px;
+        height: 3px;
+    }
+
+    .notice-box p {
+        font-size: 15px;
+    }
+
+    .table-news-title {
+        font-size: 17px;
+    }
+
+    .eligibility-wrap .eligibility-title {
+        font-size: 24px;
+    }
+
+
+    .eligibility-wrap .eligibility-item p {
+        font-size: 14px;
+    }
+
+    .eligibility-wrap .eligibility-note {
+        font-size: 14px;
+    }
+
+    .eligibility-wrap .eligibility-item h4 {
+        font-size: 16px;
+    }
+
+    .documents-stepper h3 {
+        font-size: 16px;
+    }
+
+    .doc-item {
+        font-size: 14px;
+    }
+
+    .library-section .library-intro p {
+        font-size: 13px;
+    }
+
+    .library-section .service-list li {
+        font-size: 13px;
+    }
+
+    .aqar-year {
+        font-size: 14px;
+    }
+
+    .iqac-title {
+        font-size: 22px;
+    }
+
+    .iqac-content p {
+        font-size: 14px;
+    }
+
+    .section-header h3 {
+        font-size: 22px;
+    }
+
+    .iqac-card p {
+        font-size: 14px;
+    }
+
+    .board-studies-section .section-title {
+        font-size: 22px;
+    }
+
+    .board-studies-section .department-list li span {
+        font-size: 14px;
+    }
+
+    .infra-section .infra-main-div p {
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .chairman-modern {
+        padding: 40px 0px;
+    }
+
+    .main-banner-box .inner_heading {
+        font-size: 23px;
+    }
+
+    .main-banner-box .animated-bg span {
+        width: 100px;
+        height: 100px;
+    }
+
+    .banner-breadcrumb .breadcrumb-item {
+        font-size: 10px;
+    }
+
+    .banner-breadcrumb .breadcrumb-item.active {
+        font-size: 10px;
+    }
+
+    .chairman-modern .profile-info h5 {
+        font-size: 18px;
+    }
+
+    .chairman-modern .chairman-txtt {
+        font-size: 14px;
+    }
+
+    .chairman-modern .chairman-glass p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .chairman-modern .profile-info {
+        padding: 12px;
+    }
+
+    .history-facts {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .vm-glass-card {
+        padding: 28px;
+    }
+
+    .vm-glass-card h3 {
+        font-size: 22px;
+    }
+
+
+    .goals-modern .modern-title {
+        font-size: 26px;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-count {
+        left: -40px;
+    }
+
+    .medium-header {
+        font-size: 20px;
+    }
+
+    .vm-image-box img {
+        height: 346px;
+    }
+
+    .goal-card p {
+        font-size: 12px;
+    }
+
+    .goal-card .goal-icon-img {
+        width: 40px;
+    }
+
+    .chairman-modern .shape-1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .college-img-modern {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .text-holder-main {
+        padding: 20px;
+    }
+
+    .about-history-main {
+        padding: 0 0;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .college-history-section {
+        padding: 0 0;
+    }
+
+    .founder-table td {
+        padding: 11px;
+        font-size: 13px;
+    }
+
+    .founder-table thead th {
+        font-size: 11px;
+    }
+
+    .goals-modern {
+        padding: 40px 0;
+    }
+
+    .infra-section .infra-main-div p {
+        font-size: 14px;
+    }
+
+    .gallery-section {
+        padding: 40px 0px;
+    }
+
+    .inner_tab_mainbox {
+        .nav-pills .nav-link {
+            padding: 8px 10px;
+            font-size: 13px;
+        }
+    }
+
+    .tab-arrow.left {
+        left: -5px;
+        top: 0px;
+    }
+
+    .tab-arrow.right {
+        right: -5px;
+        top: 0px;
+    }
+
+    .tab-arrow {
+        width: 37px;
+        height: 37px;
+    }
+
+    .slider-track img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .gallery-img {
+        height: auto;
+    }
+
+    .rap_admission_main .rap-acc-btn {
+        font-size: 14px;
+    }
+
+    .gc-modern-section {
+        padding: 0 0;
+    }
+
+    .rap_admission_main .rap-acc-btn::after {
+        font-size: 18px;
+    }
+
+    .faq-section h4 {
+        font-size: 13px;
+    }
+
+    .faq-section li {
+        font-size: 13px;
+    }
+
+    .faq-section p {
+        font-size: 13px;
+    }
+
+    .gc-modern-section .gc-modern-card p {
+        font-size: 13px;
+    }
+
+    .jc-info h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .jc-block p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .jc-block li {
+        font-size: 14px;
+    }
+
+    .jc-block h3 {
+        font-size: 20px;
+    }
+
+    .programme-section {
+        padding: 20px 0px;
+    }
+
+    .programme-main-title {
+        padding: 6px 11px;
+        border-left: 3px solid #A20733;
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .programme-card h3 {
+        font-size: 16px;
+    }
+
+    .programme-card {
+        padding: 20px;
+    }
+
+    .programme-card h4 {
+        font-size: 18px;
+    }
+
+    .semester-box {
+        padding: 10px;
+    }
+
+    .committee-list li {
+        font-size: 13px;
+    }
+
+    .course-header h3 {
+        font-size: 13px;
+    }
+
+    .course-header h3 span {
+        font-size: 15px;
+    }
+
+    .course-info li {
+        font-size: 13px;
+    }
+
+    .course-header i {
+        font-size: 22px;
+    }
+
+    .contact-intro {
+        font-size: 16px;
+    }
+
+    .contact-text {
+        font-size: 13px;
+    }
+
+    .aqar-year {
+        font-size: 13px;
+    }
+
+    .iqac-title {
+        font-size: 20px;
+    }
+
+    .iqac-content p {
+        font-size: 14px;
+    }
+
+    .iqac-img-box {
+        margin-top: 40px;
+    }
+
+    .section-header h3 {
+        font-size: 20px;
+    }
+
+    .iqac-card p {
+        font-size: 14px;
+    }
+
+    .board-studies-section .section-title {
+        font-size: 20px;
+    }
+
+    .board-studies-section .department-list li span {
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .main-header-classs .logobox img {
+        max-height: 44px;
+    }
+
+    .chairman-modern {
+        padding: 40px 0px;
+    }
+
+    .main-banner-box {
+        padding: 80px 0 20px 0;
+    }
+
+    .main-banner-box .inner_heading {
+        font-size: 19px;
+    }
+
+    .main-banner-box .animated-bg span {
+        width: 100px;
+        height: 100px;
+    }
+
+    .banner-breadcrumb .breadcrumb-item {
+        font-size: 10px;
+    }
+
+    .banner-breadcrumb .breadcrumb-item.active {
+        font-size: 10px;
+    }
+
+    .banner-breadcrumb .breadcrumb-item a {
+        font-size: 10px;
+    }
+
+    .chairman-modern .profile-info h5 {
+        font-size: 17px;
+    }
+
+    .chairman-modern .chairman-txtt {
+        font-size: 13px;
+    }
+
+    .chairman-modern .chairman-glass p {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .chairman-modern .profile-info {
+        padding: 12px;
+    }
+
+    .chairman-modern .modern-badge {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .history-facts {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .vm-glass-card {
+        padding: 28px;
+    }
+
+    .vm-glass-card h3 {
+        font-size: 22px;
+    }
+
+    .goals-modern .modern-title {
+        font-size: 26px;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-count {
+        left: -29px;
+    }
+
+    .medium-header {
+        font-size: 18px;
+    }
+
+    .vm-image-box img {
+        height: 346px;
+    }
+
+    .goal-card p {
+        font-size: 13px;
+    }
+
+    .goal-card .goal-icon-img {
+        width: 40px;
+    }
+
+    .chairman-modern .shape-1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .college-img-modern {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .text-holder-main {
+        padding: 20px;
+    }
+
+    .about-history-main {
+        padding: 0 0;
+    }
+
+    .info-card {
+        padding: 20px;
+    }
+
+    .college-history-section {
+        padding: 0 0;
+    }
+
+    .founder-table td {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .founder-table thead th {
+        font-size: 11px;
+    }
+
+    .goals-modern {
+        padding: 40px 0;
+    }
+
+    .infra-section .infra-main-div p {
+        font-size: 14px;
+    }
+
+    .gallery-section {
+        padding: 40px 0px;
+    }
+
+    .inner_tab_mainbox {
+        .nav-pills .nav-link {
+            padding: 6px 8px;
+            font-size: 12px;
+        }
+    }
+
+    .gallery-img {
+        height: auto;
+    }
+
+    .rap_admission_main .rap-acc-btn {
+        font-size: 14px;
+    }
+
+    .gc-modern-section {
+        padding: 0 0;
+    }
+
+    .rap_admission_main .rap-acc-btn::after {
+        font-size: 18px;
+    }
+
+    .faq-section h4 {
+        font-size: 13px;
+    }
+
+    .faq-section li {
+        font-size: 13px;
+    }
+
+    .faq-section p {
+        font-size: 13px;
+    }
+
+    .tab-arrow.left {
+        left: -5px;
+        top: 0px;
+    }
+
+    .tab-arrow.right {
+        right: -5px;
+        top: 0px;
+    }
+
+    .tab-arrow {
+        width: 34px;
+        height: 34px;
+    }
+
+    .arts-departments .arts-list li span {
+        font-size: 13px;
+    }
+
+    .jc-info h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .jc-block p {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .jc-block li {
+        font-size: 13px;
+    }
+
+    .jc-block h3 {
+        font-size: 18px;
+    }
+
+    .programme-section {
+        padding: 20px 0px;
+    }
+
+    .programme-main-title {
+        padding: 6px 11px;
+        border-left: 3px solid #A20733;
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .programme-card h3 {
+        font-size: 16px;
+    }
+
+    .programme-card {
+        padding: 20px;
+    }
+
+    .programme-card h4 {
+        font-size: 18px;
+    }
+
+    .semester-box {
+        padding: 10px;
+    }
+
+    .arts-departments .arts-title {
+        font-size: 15px;
+    }
+
+    .arts-departments .arts-list li a {
+        font-size: 11px;
+    }
+
+    .committee-list li {
+        font-size: 13px;
+    }
+
+    .course-header h3 {
+        font-size: 13px;
+    }
+
+    .course-header h3 span {
+        font-size: 15px;
+    }
+
+    .course-info li {
+        font-size: 13px;
+    }
+
+    .course-header i {
+        font-size: 22px;
+    }
+
+    .contact-intro {
+        font-size: 16px;
+    }
+
+    .contact-text {
+        font-size: 13px;
+    }
+
+    .arts-departments .arts-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .rap_admission_mainbox {
+        padding: 0px 15px 0 0;
+    }
+
+    .news-title {
+        font-size: 22px;
+    }
+
+    .news-title::after {
+        width: 55px;
+        height: 2px;
+    }
+
+    .notice-box p {
+        font-size: 14px;
+    }
+
+    .table-news-title {
+        font-size: 16px;
+    }
+
+    .eligibility-wrap .eligibility-title {
+        font-size: 22px;
+    }
+
+    .eligibility-wrap .eligibility-list {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .eligibility-wrap .eligibility-item p {
+        font-size: 13px;
+    }
+
+    .eligibility-wrap .eligibility-note {
+        font-size: 13px;
+    }
+
+    .eligibility-wrap .eligibility-item h4 {
+        font-size: 15px;
+    }
+
+    .documents-stepper h3 {
+        font-size: 14px;
+    }
+
+    .doc-item {
+        font-size: 12px;
+    }
+
+    .library-section .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .library-section .service-list li {
+        font-size: 12px;
+    }
+
+    .library-section .service-card h4 {
+        font-size: 16px;
+    }
+
+    .library-section .service-card {
+        padding: 15px;
+    }
+
+    .library-section .activity-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .library-section .activity-card h4 {
+        font-size: 15px;
+    }
+
+    .main-grid-library-class {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+
+    .library-section .section-title {
+        font-size: 16px;
+    }
+
+    .library-section .library-intro p {
+        font-size: 13px;
+    }
+
+    .railway-attractive-section .railway-heading {
+        font-size: 16px;
+    }
+
+    .timeline-item p {
+        font-size: 14px;
+    }
+
+    .board-studies-section .department-list span {
+        font-size: 14px;
+    }
+
+    .concession-note p {
+        font-size: 13px;
+    }
+
+    .board-studies-section .department-columns {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .timeline-title {
+        font-size: 19px;
+    }
+
+    .aqar-year {
+        font-size: 13px;
+    }
+
+    .aqar-section p {
+        font-size: 14px;
+    }
+
+    .iqac-title {
+        font-size: 18px;
+    }
+
+    .iqac-content p {
+        font-size: 13px;
+    }
+
+    .iqac-img-box {
+        margin-top: 40px;
+    }
+
+    .section-header h3 {
+        font-size: 18px;
+    }
+
+    .iqac-card p {
+        font-size: 13px;
+    }
+
+    .iqac-card {
+        padding: 20px;
+    }
+
+    .section-title-table {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .card-header h3 {
+        font-size: 18px;
+    }
+
+    .result-files li {
+        font-size: 13px;
+    }
+
+    .board-studies-section .section-title {
+        font-size: 18px;
+    }
+
+    .board-studies-section .department-list li span {
+        font-size: 13px;
+    }
+
+    .gc-modern-section .gc-modern-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+    }
+}
+
+/* About us css End */
